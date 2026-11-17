@@ -1,5 +1,9 @@
 # Qwen3-TTS audio wheels for Windows ARM64
 
+## Offline portable edition / 全离线便携版
+
+The portable edition includes ARM64 Python, CUDA PyTorch, the Qwen3-TTS runtime and the 12Hz 0.6B CustomVoice model. Extract all ZIP assets into one parent directory, then double-click the launcher. [Portable instructions and tested versions](portable/README.md)
+
 Community builds for native Windows on ARM. Tested on an NVIDIA RTX Spark N1X with ARM64 CPython 3.14.10 and an existing `torch 2.15.0+cu135` installation. Compatibility with other PyTorch versions, Python versions, and devices has not been verified.
 
 ## Install
@@ -70,5 +74,6 @@ The original build passed `pip check`, Kaldi filter-bank extraction, resampling,
 ## 中文说明
 
 这两个 wheel 面向 Windows ARM64。已验证的组合是原生 ARM64 Python 3.14.10、`torch 2.15.0+cu135` 和 RTX Spark N1X。下载 Release 中的两个 wheel，在自己的虚拟环境里用上面的 `--no-deps` 命令安装，可以保留现有 PyTorch。SHA-256 校验值见 Release 附件。
+
 
 
