@@ -4,6 +4,15 @@ Community builds for native Windows on ARM. Tested on an NVIDIA RTX Spark N1X wi
 
 ## Install
 
+### Install with Git / 用 Git 获取并安装
+
+激活目标虚拟环境后，在 PowerShell 中运行这一行。Git 克隆成功后，pip 会从 Release 安装两个 wheel。
+
+```powershell
+git clone https://github.com/LGCMcn/qwen3-tts-windows-arm64-wheels.git; if ($LASTEXITCODE -eq 0) { python -m pip install --no-deps -r .\qwen3-tts-windows-arm64-wheels\requirements-wheels.txt }
+```
+
+
 ### One-command install / 一键安装
 
 在目标虚拟环境中运行下面这条 PowerShell 命令。它从 GitHub Release 直接下载两个 wheel，并保留已有的 PyTorch。
@@ -61,4 +70,5 @@ The original build passed `pip check`, Kaldi filter-bank extraction, resampling,
 ## 中文说明
 
 这两个 wheel 面向 Windows ARM64。已验证的组合是原生 ARM64 Python 3.14.10、`torch 2.15.0+cu135` 和 RTX Spark N1X。下载 Release 中的两个 wheel，在自己的虚拟环境里用上面的 `--no-deps` 命令安装，可以保留现有 PyTorch。SHA-256 校验值见 Release 附件。
+
 

@@ -1,0 +1,2 @@
+https://github.com/LGCMcn/qwen3-tts-windows-arm64-wheels/releases/download/v2026.11.17/soxr-1.1.0-cp312-abi3-win_arm64.whl
+https://github.com/LGCMcn/qwen3-tts-windows-arm64-wheels/releases/download/v2026.11.17/torchaudio-2.11.0a0%2B9b19155-py3-none-win_arm64.whl
