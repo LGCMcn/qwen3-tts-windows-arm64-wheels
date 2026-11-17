@@ -8,7 +8,7 @@
 
 1. 下载 Release 中的全部 ZIP 附件。
 2. 把全部 ZIP 解压到同一个父目录，合并包内的 `Qwen3-TTS-Spark` 文件夹。压缩包按内容拆分，无需拼接文件。
-3. 双击 `Start-Qwen3-TTS.cmd`。应用、Python、CUDA 版 PyTorch 和模型都在包内，启动及配音无需联网、pip 或管理员权限。目标设备需已安装兼容的 NVIDIA 驱动。
+3. 下载 `Qwen3-TTS-Spark.exe`，放到解压出的 `Qwen3-TTS-Spark` 文件夹旁边或里面，然后双击 EXE。也可双击包内的 `Start-Qwen3-TTS.cmd`。应用、Python、CUDA 版 PyTorch 和模型都在包内，启动及配音无需联网、pip 或管理员权限。目标设备需已安装兼容的 NVIDIA 驱动。
 
 
 也可以在解压后的文件夹里用 PowerShell 生成 WAV：
@@ -47,3 +47,4 @@
 
 发布包共约 4.66 GB，包含四个 ZIP。随附 SHA256SUMS.txt。
 已在含中文和空格的新目录中解压四个 ZIP，使用空模型缓存和不可用的外部代理验证命令行及本地网页均可生成 24 kHz WAV。
+
