@@ -17,6 +17,27 @@
 .\Start-Qwen3-TTS.cmd --text "你好，这是一段配音。" --speaker Vivian --language Chinese --output output.wav
 ```
 
+### 正确解压后的目录
+
+四个 ZIP 都解压到同一个父目录（下例为 My-TTS），合并同名的 Qwen3-TTS-Spark 文件夹。EXE 放在文件夹旁边，也可放在里面。下图只列出关键文件。
+
+```text
+My-TTS/
+├── Qwen3-TTS-Spark.exe
+└── Qwen3-TTS-Spark/
+    ├── Start-Qwen3-TTS.cmd
+    ├── app.py
+    ├── licenses/
+    ├── runtime/
+    │   ├── python.exe
+    │   └── Lib/site-packages/torch/lib/torch_cuda.dll
+    └── models/
+        └── Qwen3-TTS-12Hz-0.6B-CustomVoice/
+            ├── model.safetensors
+            └── speech_tokenizer/
+                └── model.safetensors
+```
+
 ## 包含的模型和验证的版本
 
 | 项目 | 验证值 |
@@ -47,4 +68,5 @@
 
 发布包共约 4.66 GB，包含四个 ZIP。随附 SHA256SUMS.txt。
 已在含中文和空格的新目录中解压四个 ZIP，使用空模型缓存和不可用的外部代理验证命令行及本地网页均可生成 24 kHz WAV。
+
 
